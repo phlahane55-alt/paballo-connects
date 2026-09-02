@@ -29,14 +29,17 @@ export function SiteHeader() {
           className="flex items-center gap-3 text-left"
           aria-label="Paballo Innocentia Hlahane — home"
         >
-          <span className="flex size-9 items-center justify-center rounded-md bg-navy text-sm font-semibold text-navy-foreground">
+          <span className={cn(
+            "flex size-9 items-center justify-center rounded-md text-sm font-semibold",
+            scrolled ? "bg-navy text-navy-foreground" : "bg-navy-foreground/15 text-navy-foreground",
+          )}>
             PH
           </span>
           <span className="hidden leading-tight sm:block">
-            <span className="block text-sm font-semibold text-navy">
+            <span className={cn("block text-sm font-semibold", scrolled ? "text-navy" : "text-navy-foreground")}>
               Paballo Innocentia Hlahane
             </span>
-            <span className="block text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+            <span className={cn("block text-[11px] uppercase tracking-[0.18em]", scrolled ? "text-muted-foreground" : "text-navy-foreground/70")}>
               Technology | Risk | Compliance
             </span>
           </span>
@@ -48,7 +51,12 @@ export function SiteHeader() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="rounded-md px-3 py-2 text-sm font-medium text-charcoal/80 transition-colors hover:bg-secondary hover:text-navy"
+                  className={cn(
+                    "rounded-md px-3 py-2 text-sm font-medium transition-colors",
+                    scrolled
+                      ? "text-charcoal/80 hover:bg-secondary hover:text-navy"
+                      : "text-navy-foreground/80 hover:bg-navy-foreground/10 hover:text-navy-foreground",
+                  )}
                 >
                   {link.label}
                 </a>
@@ -60,7 +68,12 @@ export function SiteHeader() {
         <div className="hidden lg:block">
           <a
             href="#contact"
-            className="inline-flex items-center rounded-md bg-navy px-4 py-2 text-sm font-semibold text-navy-foreground transition-colors hover:bg-navy-deep"
+            className={cn(
+              "inline-flex items-center rounded-md px-4 py-2 text-sm font-semibold transition-colors",
+              scrolled
+                ? "bg-navy text-navy-foreground hover:bg-navy-deep"
+                : "border border-navy-foreground/35 text-navy-foreground hover:bg-navy-foreground/10",
+            )}
           >
             Get In Touch
           </a>
@@ -72,7 +85,12 @@ export function SiteHeader() {
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Close menu" : "Open menu"}
-          className="inline-flex size-10 items-center justify-center rounded-md border border-border text-navy transition-colors hover:bg-secondary lg:hidden"
+          className={cn(
+            "inline-flex size-10 items-center justify-center rounded-md border transition-colors lg:hidden",
+            scrolled
+              ? "border-border text-navy hover:bg-secondary"
+              : "border-navy-foreground/30 text-navy-foreground hover:bg-navy-foreground/10",
+          )}
         >
           {open ? <X className="size-5" /> : <Menu className="size-5" />}
         </button>
