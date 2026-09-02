@@ -1,6 +1,11 @@
 /**
  * EDITABLE CONTENT — update the placeholders below with real details.
  */
+import cvAsset from "@/assets/Paballo_Hlahane_CV.pdf.asset.json";
+import fnbCert from "@/assets/certificates/fnb-app-academy.asset.json";
+import sancsCert from "@/assets/certificates/sancs.asset.json";
+import powerBiCert from "@/assets/certificates/power-bi.asset.json";
+import dataEngineeringCert from "@/assets/certificates/data-engineering.asset.json";
 
 // ---- CONTACT PLACEHOLDERS (edit these) ----
 export const CONTACT = {
@@ -8,7 +13,7 @@ export const CONTACT = {
   linkedin: "https://linkedin.com/in/your-profile", // PLACEHOLDER
   github: "https://github.com/your-username", // PLACEHOLDER
   location: "Add your city / province", // PLACEHOLDER
-  cvUrl: "/cv.pdf", // Replace the file at public/cv.pdf to update the CV
+  cvUrl: cvAsset.url, // CV PDF (Paballo_Hlahane_CV.pdf)
 };
 
 export const NAV_LINKS = [
