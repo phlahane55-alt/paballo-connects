@@ -26,7 +26,7 @@ export function Education() {
 
         <ol className="mt-12 relative border-l border-border pl-6 sm:pl-10">
           {ITEMS.map((item, i) => (
-            <Reveal as="li" key={item.title} delay={i * 100} className="pb-10 last:pb-0">
+            <Reveal as="li" key={item.title} delay={i * 100} className="relative pb-10 last:pb-0">
               <span
                 className="absolute -left-[13px] flex size-6 items-center justify-center rounded-full border border-border bg-background"
                 aria-hidden="true"
