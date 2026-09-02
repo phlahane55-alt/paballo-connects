@@ -185,54 +185,71 @@ export const PROJECTS: Project[] = [
   },
 ];
 
-export const CERTIFICATIONS = [
+export type Certification = {
+  title: string;
+  issuer: string;
+  note: string;
+  status: string;
+  year: string | null;
+  certificateUrl: string | null;
+};
+
+export const CERTIFICATIONS: Certification[] = [
   {
-    title: "FNB App Academy",
-    issuer: "FNB App Academy",
-    note: "Certificate completed.",
+    title: "Certificate in Full Stack Development — FNB App Academy",
+    issuer: "FNB App Academy (issued by ITVarsity)",
+    note: "Certificate completed, 32 credits.",
     status: "Completed",
+    year: "2025",
+    certificateUrl: fnbCert.url,
   },
   {
     title: "Google Cloud Fundamentals",
     issuer: "Google Cloud",
     note: "Completed foundational Google Cloud learning.",
     status: "Completed",
+    year: "2026",
+    certificateUrl: null,
   },
   {
     title: "Finlite Digitisation Course",
     issuer: "INSETA",
     note: "Completed, 6 credits.",
     status: "Completed",
+    year: "2026",
+    certificateUrl: null,
   },
   {
     title: "Introduction to Power BI",
-    issuer: "Issuing organisation — placeholder",
-    note: "Completed.",
-    status: "Completed",
-  },
-  {
-    title: "SQL Learning",
-    issuer: "Learning platform — placeholder",
-    note: "Currently developing SQL skills.",
-    status: "In Progress",
-  },
-  {
-    title: "DataCamp",
     issuer: "DataCamp",
-    note: "Data analytics and technical learning.",
-    status: "In Progress",
+    note: "Completed on DataCamp (4-hour course).",
+    status: "Completed",
+    year: "2026",
+    certificateUrl: powerBiCert.url,
   },
   {
-    title: "Oracle Road to Certification",
-    issuer: "Oracle",
-    note: "Professional technology certification pathway.",
-    status: "In Progress",
+    title: "Understanding Data Engineering",
+    issuer: "DataCamp",
+    note: "Completed on DataCamp (2-hour course), part of ongoing data analytics and technical learning.",
+    status: "Completed",
+    year: "2026",
+    certificateUrl: dataEngineeringCert.url,
   },
   {
-    title: "Cybersecurity Learning",
-    issuer: "Learning platform — placeholder",
-    note: "Cybersecurity and information security development.",
+    title: "SQL Learning — Associate Data Engineer in SQL",
+    issuer: "DataCamp",
+    note: "In progress as part of the DataCamp Associate Data Engineer in SQL track.",
     status: "In Progress",
+    year: null,
+    certificateUrl: null,
+  },
+  {
+    title: "Southern Africa – Netherlands Cyber Security School (SANCS), 3rd Edition",
+    issuer: "SANCS — Stellenbosch University & The Hague Centre for Strategic Studies",
+    note: "Certificate of attendance for the cyber security programme; professional development in cybersecurity.",
+    status: "Completed",
+    year: "2026",
+    certificateUrl: sancsCert.url,
   },
 ];
 

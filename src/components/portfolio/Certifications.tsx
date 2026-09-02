@@ -9,7 +9,7 @@ export function Certifications() {
         <SectionHeading
           eyebrow="Certifications & Professional Development"
           title="Courses and learning pathways"
-          intro="Each card is editable. Year and credential links are placeholders to be completed with verified details."
+          intro="Certificates are available to view where a copy is on file."
         />
 
         <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -30,17 +30,20 @@ export function Certifications() {
                 <dl className="mt-4 space-y-1 text-xs text-muted-foreground">
                   <div className="flex gap-2">
                     <dt className="font-semibold uppercase tracking-wide">Year:</dt>
-                    <dd>Add year — placeholder</dd>
+                    <dd>{cert.year ?? "In progress"}</dd>
                   </div>
                 </dl>
-                <a
-                  href="#"
-                  className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-navy underline-offset-4 hover:underline"
-                  aria-label={`Credential link for ${cert.title} (placeholder)`}
-                >
-                  <ExternalLink className="size-4" aria-hidden="true" /> Credential link —
-                  placeholder
-                </a>
+                {cert.certificateUrl ? (
+                  <a
+                    href={cert.certificateUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-navy underline-offset-4 hover:underline"
+                    aria-label={`View certificate for ${cert.title} (opens PDF in a new tab)`}
+                  >
+                    <ExternalLink className="size-4" aria-hidden="true" /> View certificate
+                  </a>
+                ) : null}
               </div>
             </Reveal>
           ))}
