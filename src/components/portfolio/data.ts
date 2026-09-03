@@ -7,13 +7,14 @@ import sancsCert from "@/assets/certificates/sancs.asset.json";
 import powerBiCert from "@/assets/certificates/power-bi.asset.json";
 import dataEngineeringCert from "@/assets/certificates/data-engineering.asset.json";
 
-// ---- CONTACT PLACEHOLDERS (edit these) ----
 export const CONTACT = {
-  email: "your.email@example.com", // PLACEHOLDER — replace with real email
-  linkedin: "https://linkedin.com/in/your-profile", // PLACEHOLDER
-  github: "https://github.com/your-username", // PLACEHOLDER
-  location: "Add your city / province", // PLACEHOLDER
-  cvUrl: cvAsset.url, // CV PDF (Paballo_Hlahane_CV.pdf)
+  name: "Paballo Hlahane",
+  title: "LLB Candidate | Technology, Risk & Compliance",
+  email: "phlahane55@gmail.com",
+  linkedin: "https://www.linkedin.com/in/paballo-innocentia-h-a252b127",
+  github: "https://github.com/phlahane55-alt",
+  location: "Johannesburg, South Africa",
+  cvUrl: cvAsset.url, // Paballo_Hlahane_CV.pdf
 };
 
 export const NAV_LINKS = [
@@ -98,7 +99,7 @@ export const SKILL_CATEGORIES: {
       { name: "Compliance Concepts", level: "Developing" },
       { name: "Regulatory Research", level: "Developing" },
       { name: "Governance", level: "Foundational" },
-      { name: "Legal Research", level: "Developing" },
+      { name: "Legal Research & Regulatory Analysis", level: "Developing" },
       { name: "Policy & Documentation", level: "Foundational" },
     ],
   },
@@ -138,7 +139,7 @@ export type Project = {
   goal: string;
   tools: string[];
   skills: string[];
-  projectUrl: string;
+  projectUrl: string | null;
   githubUrl: string;
 };
 
@@ -155,8 +156,8 @@ export const PROJECTS: Project[] = [
       "Dashboard design",
       "Reporting",
     ],
-    projectUrl: "#", // PLACEHOLDER — add live project link
-    githubUrl: "#", // PLACEHOLDER — add GitHub repository link
+    projectUrl: null,
+    githubUrl: CONTACT.github,
   },
   {
     title: "SQL Data Analysis Project",
@@ -170,8 +171,8 @@ export const PROJECTS: Project[] = [
       "Exploration",
       "Analytical reasoning",
     ],
-    projectUrl: "#", // PLACEHOLDER
-    githubUrl: "#", // PLACEHOLDER
+    projectUrl: null,
+    githubUrl: CONTACT.github,
   },
   {
     title: "Cloud & Cybersecurity Fundamentals Project",
@@ -185,8 +186,8 @@ export const PROJECTS: Project[] = [
       "Security controls",
       "Technical documentation",
     ],
-    projectUrl: "#", // PLACEHOLDER
-    githubUrl: "#", // PLACEHOLDER
+    projectUrl: null,
+    githubUrl: CONTACT.github,
   },
 ];
 
@@ -209,22 +210,6 @@ export const CERTIFICATIONS: Certification[] = [
     certificateUrl: fnbCert.url,
   },
   {
-    title: "Google Cloud Fundamentals",
-    issuer: "Google Cloud",
-    note: "Completed foundational Google Cloud learning.",
-    status: "Completed",
-    year: "2026",
-    certificateUrl: null,
-  },
-  {
-    title: "Finlite Digitisation Course",
-    issuer: "INSETA",
-    note: "Completed, 6 credits.",
-    status: "Completed",
-    year: "2026",
-    certificateUrl: null,
-  },
-  {
     title: "Introduction to Power BI",
     issuer: "DataCamp",
     note: "Completed on DataCamp (4-hour course).",
@@ -239,14 +224,6 @@ export const CERTIFICATIONS: Certification[] = [
     status: "Completed",
     year: "2026",
     certificateUrl: dataEngineeringCert.url,
-  },
-  {
-    title: "SQL Learning — Associate Data Engineer in SQL",
-    issuer: "DataCamp",
-    note: "In progress as part of the DataCamp Associate Data Engineer in SQL track.",
-    status: "In Progress",
-    year: null,
-    certificateUrl: null,
   },
   {
     title: "Southern Africa – Netherlands Cyber Security School (SANCS), 3rd Edition",
