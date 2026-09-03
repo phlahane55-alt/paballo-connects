@@ -40,7 +40,9 @@ export function Hero() {
                 </a>
                 <a
                   href={CONTACT.cvUrl}
-                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Paballo_Hlahane_CV.pdf"
                   className="inline-flex items-center gap-2 rounded-md border border-navy-foreground/35 px-5 py-3 text-sm font-semibold text-navy-foreground transition-colors hover:bg-navy-foreground/10"
                 >
                   <Download className="size-4" aria-hidden="true" /> Download My CV
