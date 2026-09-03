@@ -16,7 +16,7 @@ export function Hero() {
           <div>
             <Reveal>
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-accent">
-                Aspiring Technology, Risk &amp; Compliance Professional
+                LLB Candidate | Technology, Risk &amp; Compliance
               </p>
               <h1 className="mt-5 text-4xl font-semibold leading-[1.08] text-navy-foreground sm:text-5xl lg:text-6xl">
                 Law. Technology. Risk. Compliance.
