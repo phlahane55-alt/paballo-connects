@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Paballo Innocentia Hlahane | Technology, Risk & Compliance" },
+      { title: "Paballo Hlahane | LLB Candidate, Technology, Risk & Compliance" },
       {
         name: "description",
         content:
-          "Portfolio of Paballo Innocentia Hlahane — aspiring Technology, Risk & Compliance professional.",
+          "Portfolio of Paballo Hlahane — LLB Candidate building a career in Technology, Risk & Compliance.",
       },
-      { name: "author", content: "Paballo Innocentia Hlahane" },
-      { property: "og:site_name", content: "Paballo Innocentia Hlahane" },
+      { name: "author", content: "Paballo Hlahane" },
+      { property: "og:site_name", content: "Paballo Hlahane" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
