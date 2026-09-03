@@ -21,7 +21,7 @@ export function Projects() {
         <SectionHeading
           eyebrow="Projects"
           title="Applied learning in practice"
-          intro="Practical projects that show how I apply data, cloud and risk thinking. Project links and screenshots are placeholders and can be updated at any time."
+          intro="Practical projects that show how I apply data, cloud and risk thinking. Project write-ups are shown below; repositories will be linked as they are published."
         />
 
         <div
@@ -105,23 +105,29 @@ export function Projects() {
                   </dl>
 
                   <div className="mt-6 flex flex-wrap gap-2 pt-2">
-                    <a
-                      href={project.projectUrl}
-                      className="inline-flex items-center gap-2 rounded-md bg-navy px-3.5 py-2 text-sm font-semibold text-navy-foreground transition-colors hover:bg-navy-deep"
-                      aria-label={`View project: ${project.title} (link placeholder)`}
-                    >
-                      <ExternalLink className="size-4" aria-hidden="true" /> View Project
-                    </a>
+                    {project.projectUrl ? (
+                      <a
+                        href={project.projectUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 rounded-md bg-navy px-3.5 py-2 text-sm font-semibold text-navy-foreground transition-colors hover:bg-navy-deep"
+                        aria-label={`View project: ${project.title} (opens in a new tab)`}
+                      >
+                        <ExternalLink className="size-4" aria-hidden="true" /> View Project
+                      </a>
+                    ) : null}
                     <a
                       href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 rounded-md border border-border px-3.5 py-2 text-sm font-semibold text-charcoal/85 transition-colors hover:border-navy/40 hover:text-navy"
-                      aria-label={`GitHub repository for ${project.title} (link placeholder)`}
+                      aria-label={`GitHub profile of Paballo Hlahane (opens in a new tab)`}
                     >
                       <Github className="size-4" aria-hidden="true" /> GitHub
                     </a>
                   </div>
                   <p className="mt-3 text-[11px] text-muted-foreground">
-                    Links are editable placeholders.
+                    Links to my GitHub profile — individual repositories are not published yet.
                   </p>
                 </div>
               </article>

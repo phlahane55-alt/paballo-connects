@@ -7,7 +7,9 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="grid gap-10 md:grid-cols-[1.2fr_1fr_auto]">
           <div>
-            <p className="text-lg font-semibold">Paballo Innocentia Hlahane</p>
+            <p className="text-lg font-semibold">Paballo Hlahane</p>
+            <p className="mt-1 text-sm text-navy-foreground/75">LLB Candidate | Technology, Risk &amp; Compliance</p>
+            <p className="mt-1 text-sm text-navy-foreground/60">Johannesburg, South Africa</p>
             <p className="mt-2 text-xs uppercase tracking-[0.22em] text-accent">
               Technology | Risk | Compliance
             </p>
@@ -32,7 +34,9 @@ export function SiteFooter() {
             <li>
               <a
                 href={CONTACT.linkedin}
-                aria-label="LinkedIn profile (placeholder link)"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile of Paballo Hlahane (opens in a new tab)"
                 className="flex size-10 items-center justify-center rounded-md border border-navy-foreground/20 transition-colors hover:border-accent hover:text-accent"
               >
                 <Linkedin className="size-4" aria-hidden="true" />
@@ -41,7 +45,9 @@ export function SiteFooter() {
             <li>
               <a
                 href={CONTACT.github}
-                aria-label="GitHub profile (placeholder link)"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub profile of Paballo Hlahane (opens in a new tab)"
                 className="flex size-10 items-center justify-center rounded-md border border-navy-foreground/20 transition-colors hover:border-accent hover:text-accent"
               >
                 <Github className="size-4" aria-hidden="true" />
@@ -50,7 +56,7 @@ export function SiteFooter() {
             <li>
               <a
                 href={`mailto:${CONTACT.email}`}
-                aria-label="Email (placeholder address)"
+                aria-label="Email phlahane55@gmail.com"
                 className="flex size-10 items-center justify-center rounded-md border border-navy-foreground/20 transition-colors hover:border-accent hover:text-accent"
               >
                 <Mail className="size-4" aria-hidden="true" />
@@ -60,7 +66,7 @@ export function SiteFooter() {
         </div>
 
         <p className="mt-10 border-t border-navy-foreground/12 pt-6 text-xs text-navy-foreground/60">
-          © 2026 Paballo Innocentia Hlahane. All rights reserved.
+          © 2026 Paballo Hlahane. All rights reserved.
         </p>
       </div>
     </footer>

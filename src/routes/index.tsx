@@ -10,9 +10,9 @@ import { Direction } from "@/components/portfolio/Direction";
 import { Contact } from "@/components/portfolio/Contact";
 import { SiteFooter } from "@/components/portfolio/SiteFooter";
 
-const TITLE = "Paballo Innocentia Hlahane | Technology, Risk & Compliance";
+const TITLE = "Paballo Hlahane | LLB Candidate, Technology, Risk & Compliance";
 const DESCRIPTION =
-  "Portfolio of Paballo Innocentia Hlahane, an aspiring technology, risk and compliance professional with an LLB in progress and growing skills in cloud, data analytics, SQL, Power BI and cybersecurity.";
+  "Portfolio of Paballo Hlahane, an early-career technology, risk and compliance professional with an LLB in progress and growing skills in cloud, data analytics, SQL, Power BI and cybersecurity.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -34,7 +34,14 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
-          name: "Paballo Innocentia Hlahane",
+          name: "Paballo Hlahane",
+          jobTitle: "LLB Candidate | Technology, Risk & Compliance",
+          email: "mailto:phlahane55@gmail.com",
+          address: { "@type": "PostalAddress", addressLocality: "Johannesburg", addressCountry: "ZA" },
+          sameAs: [
+            "https://github.com/phlahane55-alt",
+            "https://www.linkedin.com/in/paballo-innocentia-h-a252b127",
+          ],
           description: DESCRIPTION,
           knowsAbout: [
             "Technology Risk",
