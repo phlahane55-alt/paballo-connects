@@ -16,7 +16,7 @@ export function Hero() {
           <div>
             <Reveal>
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-accent">
-                Aspiring Technology, Risk &amp; Compliance Professional
+                LLB Candidate | Technology, Risk &amp; Compliance
               </p>
               <h1 className="mt-5 text-4xl font-semibold leading-[1.08] text-navy-foreground sm:text-5xl lg:text-6xl">
                 Law. Technology. Risk. Compliance.
@@ -40,7 +40,9 @@ export function Hero() {
                 </a>
                 <a
                   href={CONTACT.cvUrl}
-                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Paballo_Hlahane_CV.pdf"
                   className="inline-flex items-center gap-2 rounded-md border border-navy-foreground/35 px-5 py-3 text-sm font-semibold text-navy-foreground transition-colors hover:bg-navy-foreground/10"
                 >
                   <Download className="size-4" aria-hidden="true" /> Download My CV

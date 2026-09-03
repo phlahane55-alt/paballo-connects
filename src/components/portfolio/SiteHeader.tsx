@@ -27,7 +27,7 @@ export function SiteHeader() {
         <a
           href="#home"
           className="flex items-center gap-3 text-left"
-          aria-label="Paballo Innocentia Hlahane — home"
+          aria-label="Paballo Hlahane — home"
         >
           <span className={cn(
             "flex size-9 items-center justify-center rounded-md text-sm font-semibold",
@@ -37,7 +37,7 @@ export function SiteHeader() {
           </span>
           <span className="hidden leading-tight sm:block">
             <span className={cn("block text-sm font-semibold", scrolled ? "text-navy" : "text-navy-foreground")}>
-              Paballo Innocentia Hlahane
+              Paballo Hlahane
             </span>
             <span className={cn("block text-[11px] uppercase tracking-[0.18em]", scrolled ? "text-muted-foreground" : "text-navy-foreground/70")}>
               Technology | Risk | Compliance
